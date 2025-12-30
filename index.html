@@ -1,5 +1,181 @@
-亲爱的冯梦雅女士：
-    你好，
-  往后余生，请多多指教。
-           大帅哥袁森
-     2021年1月8号
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>致白女神（冯梦雅女士）</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 50px;
+            max-width: 600px;
+            width: 100%;
+            position: relative;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+            border-radius: 20px;
+            z-index: -1;
+            opacity: 0.3;
+            animation: gradientShift 3s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% {
+                opacity: 0.3;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .letter-content {
+            line-height: 2.2;
+            color: #333;
+            font-size: 18px;
+            position: relative;
+        }
+
+        .greeting {
+            font-size: 24px;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 30px;
+            animation: fadeInDelay 1.2s ease-in;
+        }
+
+        @keyframes fadeInDelay {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .content {
+            margin: 25px 0;
+            text-indent: 2em;
+            animation: fadeInDelay 1.4s ease-in;
+        }
+
+        .signature {
+            text-align: right;
+            margin-top: 50px;
+            animation: fadeInDelay 1.6s ease-in;
+        }
+
+        .signature-name {
+            font-size: 22px;
+            font-weight: 600;
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+
+        .signature-date {
+            font-size: 16px;
+            color: #888;
+        }
+
+        .heart {
+            display: inline-block;
+            color: #ff6b9d;
+            animation: heartbeat 1.5s ease-in-out infinite;
+            margin: 0 5px;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 30px;
+            }
+
+            .letter-content {
+                font-size: 16px;
+            }
+
+            .greeting {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="letter-content">
+            <div class="greeting">
+                亲爱的白女神（冯梦雅女士）<span class="heart">❤</span>：
+            </div>
+            <div class="content">
+                展信佳。<br><br>
+                提笔写下这封信时，心中满怀着对你的感激与珍视。在这个特别的日子里，我想对你说：<br><br>
+                感谢命运让我们相遇，感谢你出现在我的生命里。你的笑容如春风般温暖，你的存在让我的世界变得更加美好。<br><br>
+                往后余生，我想和你一起看遍世间风景，一起经历人生的酸甜苦辣。无论前路如何，我都愿意与你携手同行，共同书写属于我们的故事。<br><br>
+                请多多指教，也请让我好好照顾你。<br><br>
+                愿我们的未来，充满阳光与欢笑。
+            </div>
+            <div class="signature">
+                <div class="signature-name">你永远的帅男神袁森</div>
+                <div class="signature-date">2025年12月30号</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
